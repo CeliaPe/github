@@ -32,7 +32,7 @@ def siguienteTurno(turno):
 
 def haGanado(listaPuntos):
     # Ponemos el jugador a -1 para al entrar en el bucle que aumente y empieza
-    # en la posición 0.
+    # en la posición 0.  
     jugador = -1
     ganar = False
     # Mientras no hayamos ganado y sigua habiendo jugadores en la lista, segui-
@@ -43,7 +43,7 @@ def haGanado(listaPuntos):
         # cierto.
         if listaPuntos[jugador] >= 10:
             ganar = True
-    # Si hemos salido del bucle sin que nadie gane ponemos el jugador a -1 para 
+    # Si hemos salido del bucle sin que nadie gane ponemos el jugador a -1 para
     # que no sea un valor válido de posición de jugador.
     if (not ganar):
         jugador = -1                                           # Codigo de error
